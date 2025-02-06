@@ -3,16 +3,17 @@ let count = 0; // Kezdő érték
 const button = document.getElementById("myButton");
 const countDisplay = document.getElementById("count");
 
-button.addEventListener("click", () => {
-    count++; // Növeljük a számlálót
-    countDisplay.textContent = count; // Frissítjük a kijelzőt
-});
+
 
 function selectOption(option) {
     if (option === 'yes') {
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; 
             displayCatHeart(); 
+            button.addEventListener("click", () => {
+                count++; // Növeljük a számlálót
+                countDisplay.textContent = count; // Frissítjük a kijelzőt
+            });
         });
     } else if (option === 'no') {
         document.getElementById('no-button').innerText = 'You sure?'; 
