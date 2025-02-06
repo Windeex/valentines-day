@@ -32,7 +32,7 @@ function flashRainbowColors(callback) {
         if (callback) {
             callback();
         }
-    }, 2000); 
+    }, 2000); //aaaa
 }
 
 
