@@ -50,11 +50,10 @@ function displayCatHeart() {
     document.getElementById('image-container').innerHTML = '';
     var imageContainer = document.getElementById('image-container');
     var catHeartImage = new Image();
-    
     catHeartImage.src = 'cat-heart.gif';
     catHeartImage.alt = 'Cat Heart';
     catHeartImage.onload = function() {
-        imageContainer.appendChild(catHeartImage);
+        imageContainer.appendChild(catHeart);
         document.getElementById('options').style.display = 'none';
     };
 }
