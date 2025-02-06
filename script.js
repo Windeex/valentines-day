@@ -1,5 +1,12 @@
 // script.js
+let count = 0; // Kezdő érték
+const button = document.getElementById("myButton");
+const countDisplay = document.getElementById("count");
 
+button.addEventListener("click", () => {
+    count++; // Növeljük a számlálót
+    countDisplay.textContent = count; // Frissítjük a kijelzőt
+});
 
 function selectOption(option) {
     if (option === 'yes') {
